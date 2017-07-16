@@ -10,7 +10,7 @@ const state = {
 
 const mutations = {
   update (state, { key, value }) {
-    Vue.set(state, key, value)
+    Vue.set(state.cells, key, value)
   },
   DECREMENT (state, { key, value }) {
     state.cells[key] = value
